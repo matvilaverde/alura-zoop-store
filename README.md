@@ -1,27 +1,33 @@
-# 3664ZoopStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+![Descricao da sua imagem](thumbnail.png)
 
-## Development server
+# Zoop Store
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Zoop Store é um e-commerce recheiado de produtos de diversas verdentes.
 
-## Code scaffolding
+## 🔨 Funcionalidades do projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O App oferece uma prática lista de produtos, apresentando detalhes como título, valor, descrição e imagem para uma visualização completa. Além disso, proporciona a conveniência de gerenciar esses produtos, permitindo operações como cadastro, remoção e atualização. Vale ressaltar que as informações do aplicativo são armazenadas localmente no navegador, o que significa que serão perdidas ao fechar o aplicativo.
 
-## Build
+O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/ghzMuGeV2n1ninpw2HaMCg/Dominando-Testes-em-Angular?type=design&node-id=9-457&mode=design&t=TuxafGqTTi1CWk5i-0).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ✔️ Técnicas e tecnologias utilizadas
 
-## Running unit tests
+Se liga nessa lista de tudo que usaremos nesse curso:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `Angular`
+- `Angular CLI`
+- `Angular Material`
+- `Figma`
 
-## Running end-to-end tests
+## 🛠️ Abrir e rodar o projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `ng serve` para iniciar o projeto.
 
-## Further help
+Depois, acesse <a href="http://localhost:4200/">http://localhost:4200/</a> no seu navegador.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📚 Mais informações do curso
+
+A Zoop Store é um e-commerce fictícia utilizada nesse curso da Alura.
+A ideia principal desse curso é apresentar os principais conceitos de testes no ecosistema do Angular.
+
