@@ -23,7 +23,7 @@ describe('CardComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('should render product template', () => {
+  it('should render product template', () => {
     const product: Product = {
       id: 1,
       title: 'iPhone 15',
@@ -45,5 +45,31 @@ describe('CardComponent', () => {
     expect(productTitle.textContent).toContain(product.title);
     expect(productDescription.textContent).toContain(product.description);
     expect(productPrice.textContent).toContain(product.price);
+  });
+
+  fit('should emit onDelete event on delete click', () => {
+    const product: Product = {
+      id: 2,
+      title: 'Samsung S22',
+      price: '950',
+      category: 'electronic',
+      description: 'smartphone',
+      image: 'src/assets/image.png'
+    }
+
+    component.product = product;
+    fixture.detectChanges();
+
+    const spy = spyOn(component.onDelete, 'emit');
+
+    component.isManagable = true;
+
+    fixture.detectChanges();
+
+    const managableElement = fixture.debugElement.query(By.css('span')).nativeElement;
+    expect(managableElement).not.toBeNull();
+
+    component.onDeleteClick();
+    expect(spy).toHaveBeenCalledWith(product);
   });
 });
