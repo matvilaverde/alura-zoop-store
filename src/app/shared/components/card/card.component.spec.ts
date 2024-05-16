@@ -73,7 +73,7 @@ describe('CardComponent', () => {
     expect(spy).toHaveBeenCalledWith(product);
   });
 
-  fit('should emit onEdit event on edit click', () => {
+  it('should emit onEdit event on edit click', () => {
     const product: Product = {
       id: 2,
       title: 'Samsung S22',
